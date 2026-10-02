@@ -8,4 +8,8 @@ class BonusIndependenceTest {
     }
 
     // Add an independence test here.
+    @Test void cChangesDecision() {
+        assertFalse(bonus("2C 5D 8H JS KC"));
+        assertTrue(bonus("7C 7D 7H 9S 9C"));
+    }
 }
